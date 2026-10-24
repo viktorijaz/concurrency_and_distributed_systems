@@ -1,0 +1,37 @@
+# Compiled binaries have no extension, so ignore everything by default
+# and allow only source, config and docs back in.
+*
+!*/
+
+# source
+!*.c
+!*.cpp
+!*.h
+!*.hpp
+!*.go
+!*.rs
+!*.py
+!*.sh
+
+# build / project config
+!Makefile
+!CMakeLists.txt
+!go.mod
+!go.sum
+!Cargo.toml
+!Cargo.lock
+!*.toml
+!*.yaml
+!*.yml
+!*.json
+
+# docs
+!*.md
+!*.txt
+!*.png
+!.gitignore
+
+# build output folders, even if they contain allowed files
+build/
+target/
+.vscode/
